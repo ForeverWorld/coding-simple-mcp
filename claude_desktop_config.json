@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "coding-simple-mcp": {
+      "command": "npx",
+      "args": ["coding-simple-mcp"],
+      "env": {
+        "API_BASE_URL": "https://your-team.coding.net/open-api",
+        "API_TOKEN": "your-personal-access-token"
+      }
+    }
+  }
+}

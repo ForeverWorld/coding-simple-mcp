@@ -1,0 +1,60 @@
+{
+  "name": "coding-simple-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for Coding DevOps API integration - Query user projects, issues, and defects",
+  "main": "dist/index.js",
+  "bin": {
+    "coding-simple-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE.md",
+    "claude_desktop_config.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp", 
+    "model-context-protocol",
+    "coding", 
+    "devops", 
+    "claude",
+    "ai",
+    "api",
+    "server"
+  ],
+  "author": {
+    "name": "bydongxin",
+    "email": "wdxchn@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wdx/coding-simple-mcp.git"
+  },
+  "homepage": "https://github.com/wdx/coding-simple-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/wdx/coding-simple-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
